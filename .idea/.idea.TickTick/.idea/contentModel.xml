@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\jesse\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\jesse\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_TickTick.490641397.00" t="ExcludeRecursive" />
+    <e p="D:\Projects\Monogame\Tick Tick" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="TickTick.sln" t="IncludeFlat" />
+      <e p="TickTickFinal" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Content" t="Include">
+          <e p="Content.mgcb" t="Include" />
+        </e>
+        <e p="GameManagement" t="Include">
+          <e p="AnimatedGameObject.cs" t="Include" />
+          <e p="Animation.cs" t="Include" />
+          <e p="AssetManager.cs" t="Include" />
+          <e p="Collision.cs" t="Include" />
+          <e p="DrawingHelper.cs" t="Include" />
+          <e p="GameEnvironment.cs" t="Include" />
+          <e p="GameObject.cs" t="Include" />
+          <e p="GameObjectGrid.cs" t="Include" />
+          <e p="GameObjectList.cs" t="Include" />
+          <e p="GameSettingsManager.cs" t="Include" />
+          <e p="GameStateManager.cs" t="Include" />
+          <e p="IGameLoopObject.cs" t="Include" />
+          <e p="InputHelper.cs" t="Include" />
+          <e p="SpriteGameObject.cs" t="Include" />
+          <e p="SpriteSheet.cs" t="Include" />
+          <e p="TextGameObject.cs" t="Include" />
+        </e>
+        <e p="gameobjects" t="Include">
+          <e p="Clouds.cs" t="Include" />
+          <e p="enemies" t="Include">
+            <e p="PatrollingEnemy.cs" t="Include" />
+            <e p="PlayerFollowingEnemy.cs" t="Include" />
+            <e p="Rocket.cs" t="Include" />
+            <e p="Sparky.cs" t="Include" />
+            <e p="Turtle.cs" t="Include" />
+            <e p="UnpredictableEnemy.cs" t="Include" />
+          </e>
+          <e p="Player.cs" t="Include" />
+          <e p="PlayerPhysics.cs" t="Include" />
+          <e p="Tile.cs" t="Include" />
+          <e p="TileField.cs" t="Include" />
+          <e p="TimerGameObject.cs" t="Include" />
+          <e p="VisibilityTimer.cs" t="Include" />
+          <e p="WaterDrop.cs" t="Include" />
+        </e>
+        <e p="level" t="Include">
+          <e p="Level.cs" t="Include" />
+          <e p="LevelGameLoop.cs" t="Include" />
+          <e p="LevelLoading.cs" t="Include" />
+        </e>
+        <e p="menu" t="Include">
+          <e p="Button.cs" t="Include" />
+          <e p="LevelButton.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="states" t="Include">
+          <e p="GameOverState.cs" t="Include" />
+          <e p="HelpState.cs" t="Include" />
+          <e p="LevelFinishedState.cs" t="Include" />
+          <e p="LevelMenuState.cs" t="Include" />
+          <e p="PlayingState.cs" t="Include" />
+          <e p="TitleMenuState.cs" t="Include" />
+        </e>
+        <e p="TickTick.cs" t="Include" />
+        <e p="TickTickFinal.csproj" t="IncludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>
