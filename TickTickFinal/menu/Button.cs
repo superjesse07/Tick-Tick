@@ -6,6 +6,7 @@
         : base(imageAsset, layer, id)
     {
         pressed = false;
+        isScreenSpaceObject = true;
     }
 
     public override void HandleInput(InputHelper inputHelper)

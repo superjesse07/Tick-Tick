@@ -6,10 +6,12 @@ public class SpriteGameObject : GameObject
     protected SpriteSheet sprite;
     protected Vector2 origin;
     public bool PerPixelCollisionDetection = true;
+    protected bool isScreenSpaceObject;
 
-    public SpriteGameObject(string assetName, int layer = 0, string id = "", int sheetIndex = 0)
+    public SpriteGameObject(string assetName, int layer = 0, string id = "", int sheetIndex = 0,bool isScreenSpaceObject = false)
         : base(layer, id)
     {
+        this.isScreenSpaceObject = isScreenSpaceObject;
         if (assetName != "")
         {
             sprite = new SpriteSheet(assetName, sheetIndex);
@@ -26,7 +28,7 @@ public class SpriteGameObject : GameObject
         {
             return;
         }
-        sprite.Draw(spriteBatch, this.GlobalPosition, origin);
+        sprite.Draw(spriteBatch, isScreenSpaceObject ? GlobalPosition : Camera.GetScreenPos(GlobalPosition), origin);
     }
 
     public SpriteSheet Sprite

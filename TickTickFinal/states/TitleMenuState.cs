@@ -7,7 +7,7 @@ class TitleMenuState : GameObjectList
     public TitleMenuState()
     {
         // load the title screen
-        SpriteGameObject titleScreen = new SpriteGameObject("Backgrounds/spr_title", 0, "background");
+        SpriteGameObject titleScreen = new SpriteGameObject("Backgrounds/spr_title", 0, "background",isScreenSpaceObject:true);
         Add(titleScreen);
 
         // add a play button

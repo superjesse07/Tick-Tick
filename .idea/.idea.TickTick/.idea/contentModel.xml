@@ -15,6 +15,7 @@
           <e p="AnimatedGameObject.cs" t="Include" />
           <e p="Animation.cs" t="Include" />
           <e p="AssetManager.cs" t="Include" />
+          <e p="Camera.cs" t="Include" />
           <e p="Collision.cs" t="Include" />
           <e p="DrawingHelper.cs" t="Include" />
           <e p="GameEnvironment.cs" t="Include" />
@@ -25,6 +26,7 @@
           <e p="GameStateManager.cs" t="Include" />
           <e p="IGameLoopObject.cs" t="Include" />
           <e p="InputHelper.cs" t="Include" />
+          <e p="ParallaxGameObject.cs" t="Include" />
           <e p="SpriteGameObject.cs" t="Include" />
           <e p="SpriteSheet.cs" t="Include" />
           <e p="TextGameObject.cs" t="Include" />

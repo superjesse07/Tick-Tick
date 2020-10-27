@@ -16,6 +16,8 @@ class TickTick : GameEnvironment
         IsMouseVisible = true;
     }
 
+    public static int levelCount = 12;
+
     protected override void LoadContent()
     {
         base.LoadContent();

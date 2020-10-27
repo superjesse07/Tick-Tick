@@ -42,6 +42,7 @@
     <Compile Include="GameManagement\AnimatedGameObject.cs" />
     <Compile Include="GameManagement\Animation.cs" />
     <Compile Include="GameManagement\AssetManager.cs" />
+    <Compile Include="GameManagement\Camera.cs" />
     <Compile Include="GameManagement\Collision.cs" />
     <Compile Include="GameManagement\DrawingHelper.cs" />
     <Compile Include="GameManagement\GameEnvironment.cs" />
@@ -52,6 +53,7 @@
     <Compile Include="GameManagement\GameStateManager.cs" />
     <Compile Include="GameManagement\IGameLoopObject.cs" />
     <Compile Include="GameManagement\InputHelper.cs" />
+    <Compile Include="GameManagement\ParallaxGameObject.cs" />
     <Compile Include="GameManagement\SpriteGameObject.cs" />
     <Compile Include="GameManagement\SpriteSheet.cs" />
     <Compile Include="GameManagement\TextGameObject.cs" />

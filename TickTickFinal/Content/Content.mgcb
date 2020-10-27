@@ -612,3 +612,21 @@
 /processorParam:TextureFormat=Compressed
 /build:Fonts/Hud.spritefont
 
+#begin Levels/11.txt
+/copy:Levels/11.txt
+
+#begin Levels/12.txt
+/copy:Levels/12.txt
+
+#begin Levels/13.txt
+/copy:Levels/13.txt
+
+#begin Levels/14.txt
+/copy:Levels/14.txt
+
+#begin Levels/15.txt
+/copy:Levels/15.txt
+
+#begin Levels/16.txt
+/copy:Levels/16.txt
+

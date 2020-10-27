@@ -112,8 +112,8 @@ partial class Player : AnimatedGameObject
             {
                 Die(true);
             }
+            Camera.SetPosition(position,new Rectangle((int) tiles.GlobalPosition.X,(int) tiles.GlobalPosition.Y,tiles.Columns*tiles.CellWidth,tiles.Rows*tiles.CellHeight));
         }
-
         DoPhysics();
     }
 

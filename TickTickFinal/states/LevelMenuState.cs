@@ -11,11 +11,11 @@ class LevelMenuState : GameObjectList
         List<Level> levels = playingState.Levels;
 
         // add a background
-        SpriteGameObject background = new SpriteGameObject("Backgrounds/spr_levelselect", 0, "background");
+        SpriteGameObject background = new SpriteGameObject("Backgrounds/spr_levelselect", 0, "background",isScreenSpaceObject:true);
         Add(background);
 
         // add the level buttons
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < TickTick.levelCount; i++)
         {
             int row = i / 4;
             int column = i % 4;
