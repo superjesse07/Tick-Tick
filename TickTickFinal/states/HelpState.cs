@@ -7,7 +7,7 @@ class HelpState : GameObjectList
     public HelpState()
     {
         // add a background
-        SpriteGameObject background = new SpriteGameObject("Backgrounds/spr_help", 0, "background");
+        SpriteGameObject background = new SpriteGameObject("Backgrounds/spr_help", 0, "background",isScreenSpaceObject:true);
         Add(background);
 
         // add a back but.ton
