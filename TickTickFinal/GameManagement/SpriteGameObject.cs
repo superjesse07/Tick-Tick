@@ -28,7 +28,7 @@ public class SpriteGameObject : GameObject
         {
             return;
         }
-        sprite.Draw(spriteBatch, isScreenSpaceObject ? GlobalPosition : Camera.GetScreenPos(GlobalPosition), origin);
+        sprite.Draw(spriteBatch, isScreenSpaceObject ? GlobalPosition : Camera.GetScreenPos(gameTime,GlobalPosition), origin);
     }
 
     public SpriteSheet Sprite

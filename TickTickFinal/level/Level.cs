@@ -10,6 +10,7 @@ partial class Level : GameObjectList
     {
         Add(new GameObjectList(1, "waterdrops"));
         Add(new GameObjectList(2, "enemies"));
+        Add(new GameObjectList(3,"pickups"));
         LoadTiles("Content/Levels/" + levelIndex + ".txt");
         TileField tiles = Find("tiles") as TileField;
         

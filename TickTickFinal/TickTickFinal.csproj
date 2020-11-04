@@ -45,6 +45,7 @@
     <Compile Include="GameManagement\Camera.cs" />
     <Compile Include="GameManagement\Collision.cs" />
     <Compile Include="GameManagement\DrawingHelper.cs" />
+    <Compile Include="GameManagement\Effects.cs" />
     <Compile Include="GameManagement\GameEnvironment.cs" />
     <Compile Include="GameManagement\GameObject.cs" />
     <Compile Include="GameManagement\GameObjectGrid.cs" />
@@ -65,7 +66,9 @@
     <Compile Include="gameobjects\enemies\Turtle.cs" />
     <Compile Include="gameobjects\enemies\UnpredictableEnemy.cs" />
     <Compile Include="gameobjects\Player.cs" />
+    <Compile Include="gameobjects\EffectOverlayObject.cs" />
     <Compile Include="gameobjects\PlayerPhysics.cs" />
+    <Compile Include="gameobjects\Potion.cs" />
     <Compile Include="gameobjects\Tile.cs" />
     <Compile Include="gameobjects\TileField.cs" />
     <Compile Include="gameobjects\TimerGameObject.cs" />

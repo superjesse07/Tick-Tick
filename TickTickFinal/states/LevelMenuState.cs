@@ -52,6 +52,7 @@ class LevelMenuState : GameObjectList
 
         if (LevelSelected != -1)
         {
+            Effects.Clear(); // Clear the effects in case some are still active from the previous level
             PlayingState playingState = GameEnvironment.GameStateManager.GetGameState("playingState") as PlayingState;
             playingState.CurrentLevelIndex = LevelSelected - 1;
             GameEnvironment.GameStateManager.SwitchTo("playingState");

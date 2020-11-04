@@ -46,6 +46,16 @@ partial class Player : AnimatedGameObject
         {
             walkingSpeed *= 1.5f;
         }
+
+        if (Effects.HasEffect(EffectType.SWIFTNESS)) // if the player has swiftness double his speed
+        {
+            walkingSpeed *= 2f;
+        }
+
+        if (Effects.HasEffect(EffectType.SLOWNESS)) // if the player has slowness half his speed
+        {
+            walkingSpeed *= 0.5f;
+        }
         if (!isAlive)
         {
             return;
@@ -68,7 +78,7 @@ partial class Player : AnimatedGameObject
         }
         if ((inputHelper.KeyPressed(Keys.Space) || inputHelper.KeyPressed(Keys.Up)) && isOnTheGround)
         {
-            Jump();
+            Jump(Effects.HasEffect(EffectType.JUMP_BOOST) ? 2200 : 1100); // if the player has the jump boost effect double the jump speed
         }
     }
 
@@ -132,7 +142,7 @@ partial class Player : AnimatedGameObject
 
     public void Die(bool falling)
     {
-        if (!isAlive || finished)
+        if (!isAlive || finished || Effects.HasEffect(EffectType.RESISTANCE))
         {
             return;
         }

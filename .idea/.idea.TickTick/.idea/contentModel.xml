@@ -18,6 +18,7 @@
           <e p="Camera.cs" t="Include" />
           <e p="Collision.cs" t="Include" />
           <e p="DrawingHelper.cs" t="Include" />
+          <e p="Effects.cs" t="Include" />
           <e p="GameEnvironment.cs" t="Include" />
           <e p="GameObject.cs" t="Include" />
           <e p="GameObjectGrid.cs" t="Include" />
@@ -33,6 +34,7 @@
         </e>
         <e p="gameobjects" t="Include">
           <e p="Clouds.cs" t="Include" />
+          <e p="EffectOverlayObject.cs" t="Include" />
           <e p="enemies" t="Include">
             <e p="PatrollingEnemy.cs" t="Include" />
             <e p="PlayerFollowingEnemy.cs" t="Include" />
@@ -43,6 +45,7 @@
           </e>
           <e p="Player.cs" t="Include" />
           <e p="PlayerPhysics.cs" t="Include" />
+          <e p="Potion.cs" t="Include" />
           <e p="Tile.cs" t="Include" />
           <e p="TileField.cs" t="Include" />
           <e p="TimerGameObject.cs" t="Include" />

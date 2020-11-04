@@ -18,6 +18,6 @@ public class ParallaxGameObject : SpriteGameObject
             return;
         }
 
-        sprite.Draw(spriteBatch, isScreenSpaceObject ? GlobalPosition : Camera.GetScreenPos(GlobalPosition, _parallaxSpeed), origin);
+        sprite.Draw(spriteBatch, isScreenSpaceObject ? GlobalPosition : Camera.GetScreenPos(gameTime,GlobalPosition, _parallaxSpeed), origin);
     }
 }
