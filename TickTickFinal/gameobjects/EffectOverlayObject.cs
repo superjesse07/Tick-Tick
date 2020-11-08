@@ -12,8 +12,8 @@ namespace TickTick5.gameobjects
 
         public override void Update(GameTime gameTime)
         {
-            if (GameWorld.Find("player") is Player player) position = player.Position - new Vector2(0,player.Center.Y);
-            visible = Effects.HasEffect(_effectType, gameTime);
+            if (GameWorld.Find("player") is Player player) position = player.Position - new Vector2(0,player.Center.Y); //Move to the player position
+            visible = Effects.HasEffect(_effectType, gameTime); // only show if the effect is active
         }
     }
 }

@@ -17,7 +17,7 @@ partial class Level : GameObjectList
             line = fileReader.ReadLine();
         }
 
-        TileField tiles = new TileField(textLines.Count - 1, width, 1, "tiles");
+        TileField tiles = new TileField(textLines.Count - 2, width, 1, "tiles");
 
         GameObjectList hintField = new GameObjectList(100);
         Add(hintField);
@@ -27,7 +27,7 @@ partial class Level : GameObjectList
         hintField.Add(hintFrame);
         TextGameObject hintText = new TextGameObject("Fonts/HintFont", 2);
         hintText.Text = textLines[textLines.Count - 2];
-        timeLimit = int.Parse(textLines[textLines.Count - 1]);
+        timeLimit = int.Parse(textLines[textLines.Count - 1]); // read the time limit from the last line
         hintText.Position = new Vector2(120, 25);
         hintText.Color = Color.Black;
         hintField.Add(hintText);
@@ -38,6 +38,7 @@ partial class Level : GameObjectList
         var blindnessCircle = new EffectOverlayObject(EffectType.BLINDNESS, "Sprites/blindnessCircle", 99, "darkness");
         blindnessCircle.Origin = blindnessCircle.Center;
         Add(blindnessCircle);
+        
         //Add shield overlay
         var shield = new EffectOverlayObject(EffectType.RESISTANCE, "Sprites/shield", 99, "shield");
         shield.Origin = shield.Center;
@@ -53,7 +54,7 @@ partial class Level : GameObjectList
         tiles.CellHeight = 55;
         for (int x = 0; x < width; ++x)
         {
-            for (int y = 0; y < textLines.Count - 1; ++y)
+            for (int y = 0; y < textLines.Count - 2; ++y)
             {
                 Tile t = LoadTile(textLines[y][x], x, y);
                 tiles.Add(t, x, y);

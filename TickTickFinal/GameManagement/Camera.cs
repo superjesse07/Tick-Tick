@@ -23,9 +23,10 @@ public static class Camera
     public static void SetPosition(Vector2 newPosition, Rectangle rectangle = default)
     {
         Vector2 screenSize = new Vector2(GameEnvironment.Screen.X, GameEnvironment.Screen.Y);
-        _position = newPosition - screenSize / 2f;
+        _position = newPosition - screenSize / 2f; // offset the position so that the newPosition is the center of the screen
         if (rectangle != default)
         {
+            //make sure the new camera position fits within the level
             if (_position.X < rectangle.X) _position.X = rectangle.X;
             if (_position.Y < rectangle.Y) _position.Y = rectangle.Y;
             if (_position.X + screenSize.X > rectangle.X + rectangle.Width) _position.X = rectangle.X + rectangle.Width - screenSize.X;

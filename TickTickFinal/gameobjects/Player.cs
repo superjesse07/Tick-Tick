@@ -51,7 +51,6 @@ partial class Player : AnimatedGameObject
         {
             walkingSpeed *= 2f;
         }
-
         if (Effects.HasEffect(EffectType.SLOWNESS)) // if the player has slowness half his speed
         {
             walkingSpeed *= 0.5f;
@@ -142,7 +141,7 @@ partial class Player : AnimatedGameObject
 
     public void Die(bool falling)
     {
-        if (!isAlive || finished || Effects.HasEffect(EffectType.RESISTANCE))
+        if (!isAlive || finished || Effects.HasEffect(EffectType.RESISTANCE)) // check if the player has resistance (if so he can't die)
         {
             return;
         }

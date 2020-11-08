@@ -5,9 +5,9 @@
 
     public class Potion : SpriteGameObject
     {
-        private SpriteSheet overlay;
-        private Color _color;
-        private EffectType _effectType;
+        private SpriteSheet overlay; // the sprite that will be colored to indicate the potion type
+        private Color _color; // the color of the overlay
+        private EffectType _effectType; // what effect the potion gives
         
         public Potion(Color color,EffectType effectType, int layer = 0, string id = "") : base ("Sprites/potion",layer,id)
         {
@@ -31,13 +31,13 @@
         {
             double t = gameTime.TotalGameTime.TotalSeconds * 3.0f + Position.X;
             
-            position.Y += (float)Math.Sin(t) * 0.2f;
+            position.Y += (float)Math.Sin(t) * 0.2f; // move up and down
             Player player = GameWorld.Find("player") as Player;
             if (visible && CollidesWith(player))
             {
                 visible = false;
-                GameEnvironment.AssetManager.PlaySound("Sounds/Minecraft_Drinking_Sound_Effect");
-                Effects.AddEffect(_effectType,gameTime,10);
+                GameEnvironment.AssetManager.PlaySound("Sounds/Minecraft_Drinking_Sound_Effect"); // play a sound effect
+                Effects.AddEffect(_effectType,gameTime,10); // add the effect
             }
         }
     }
